@@ -173,7 +173,7 @@ function UnderConstruction() {
           </div>
 
           <div className="uc-floating-heart uc-heart-two">✧</div>
-          <div className="uc-floating-heart uc-heart-three">✿</div>
+          <div className="uc-floating-heart uc-heart-three">✦</div>
 
           <div className="uc-orbit-label"> ♡</div>
         </div>
