@@ -6,8 +6,8 @@ const codeLines = [
   "const portfolio = {",
   '  creator: "Ugne",',
   '  passion: "creative coding",',
-  '  aesthetic: "pretty + powerful",',
-  "  status: 'building something magic'",
+  '  occupation: "software developer",',
+  '  status: "building something fun"',
   "};",
   "",
   "portfolio.launch();",
@@ -192,7 +192,7 @@ function UnderConstruction() {
 }
 
 function CodeLine({ line }: { line: string }) {
-  const match = line.match(/^(\s*)(const|creator:|passion:|aesthetic:|status:)(.*)$/);
+  const match = line.match(/^(\s*)(const|creator:|passion:|occupation:|status:)(.*)$/);
 
   if (!match) {
     return <span className="uc-code-default">{line}</span>;

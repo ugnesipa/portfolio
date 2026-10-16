@@ -130,6 +130,45 @@ a {
   text-align: center;
 }
 
+/* Site background (shared with the under construction page) */
+.site-bg {
+  /* blood orange */
+  --hot-red: #990000ec;
+
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  isolation: isolate;
+  overflow: hidden;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse at 77% 48%, #310101c4 0%, transparent 40%),
+    radial-gradient(ellipse at 12% 12%, #300201c0 0%, transparent 35%),
+    #160002;
+}
+
+/* cherry red */
+.site-bg .uc-glow-two {
+  background: #250404;
+}
+
+/* The background is dark, so the site always uses the dark palette */
+:root:has(.site-bg) {
+  --text: #bba39f;
+  --text-h: #fff6f2;
+  --bg: #120809;
+  --border: rgba(94, 22, 22, 0.1);
+  --accent: #b90e0e;
+  --accent-bg: rgba(131, 20, 20, 0.315);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .site-bg * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
+
 .button {
   display: inline-block;
   margin-top: 16px;
