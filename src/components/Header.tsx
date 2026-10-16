@@ -10,10 +10,7 @@ const links = [
 function Header() {
   return (
     <header className="header">
-      <Link to="/" className="brand">
-        Ugne
-      </Link>
-      <nav className="nav">
+      <nav className="nav ">
         {links.map(({ to, label }) => (
           <NavLink key={to} to={to} end={to === '/'}>
             {label}
